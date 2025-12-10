@@ -52,33 +52,42 @@ Project Structure
 │
 └── README.md
 ```
-Java Modules (Short Overview) File Purpose Main.java Runs the full experiment: echo, GPS, ARQ, images, logging. EchoHandler.java Sends echo commands and measures RTT. ARQHandler.java Implements ACK/NACK ARQ protocol and FCS validation. ImageHandler.java Retrieves and decodes JPEG images from the modem. GPSHandler.java Parses GPS NMEA data and constructs map image requests. GPGGA.java GPS data model for latitude/longitude extraction. ModemUtils.java Shared utilities for modem I/O and CSV export. Packet.java Data model for packets (RTT, retransmissions, FCS). Session Data
+| File                  | Purpose                                                    |
+| --------------------- | ---------------------------------------------------------- |
+| **Main.java**         | Runs the full experiment: echo, GPS, ARQ, images, logging. |
+| **EchoHandler.java**  | Sends echo commands and measures RTT.                      |
+| **ARQHandler.java**   | Implements ACK/NACK ARQ protocol and FCS validation.       |
+| **ImageHandler.java** | Retrieves and decodes JPEG images from the modem.          |
+| **GPSHandler.java**   | Parses GPS NMEA data and constructs map image commands.    |
+| **GPGGA.java**        | GPS data model for latitude/longitude extraction.          |
+| **ModemUtils.java**   | Shared utilities for modem I/O and CSV export.             |
+| **Packet.java**       | Data model for packets (RTT, retransmissions, FCS).        |
 
 Each session directory contains:
 
-Packet logs (CSV)
+* Packet logs (CSV)
 
-Derived plots (PNG)
+* Derived plots (PNG)
 
-Retrieved JPEG images
+* Retrieved JPEG images
 
-Session-specific README with analysis notes
+* Session-specific README with analysis notes
 
-The project separates code (src/) from experimental results (data_output/), ensuring clarity and reproducibility.
+The project separates code (```src/```) from experimental results (```data_output/```), ensuring clarity and reproducibility.
 
 Requirements
 
 Java
 
-JDK 8 or newer
+* JDK 8 or newer
 
-Standard Java I/O (no additional libraries required)
+* Standard Java I/O (no additional libraries required)
 
 Modem
 
-Ithaki Virtual Modem environment
+* Ithaki Virtual Modem environment
 
-Reliable serial/terminal configuration
+* Reliable serial/terminal configuration
 
 Running the Project
 
@@ -92,7 +101,8 @@ java userApplication.Main
 ```
 All output files are generated under the directory defined in FILES_PATH inside Main.java.
 
-If you wish to separate results per session (e.g., session1, session2), adjust FILES_PATH accordingly before execution.
+If you wish to separate results per session (e.g., session1, session2), adjust ```FILES_PATH``` accordingly before execution.
+
 
 
 
