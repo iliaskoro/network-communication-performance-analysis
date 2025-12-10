@@ -3,11 +3,11 @@
 Session 1 includes the complete analysis of system response time and retransmission behavior using virtual modem packet logs.
 The data were processed to produce three plots:
 
-* System response time (G1)
+- System response time (G1)
 
-* ARQ-assisted response time under induced errors (G2)
+- ARQ-assisted response time under induced errors (G2)
 
-* Probability distribution of packet retransmissions (G3)
+- Probability distribution of packet retransmissions (G3)
 
 <h2>Contents</h2>
 
@@ -42,9 +42,10 @@ This plot highlights the error characteristics of the communication channel and 
 
 The raw CSV logs stored in data/ include:
 
-* Packets received without errors
+- Packets received without errors
 
-* Packets received with errors and retransmissions
+- Packets received with errors and retransmissions
 
 These files were used to calculate delays, identify ACK/NACK sequences, and generate the three plots.
+
 
