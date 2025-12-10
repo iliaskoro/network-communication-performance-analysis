@@ -1,4 +1,4 @@
-</h1>Session 1 – System Response Analysis & Packet Retransmission</h1>
+<h1>Session 1 – System Response Analysis & Packet Retransmission</h1>
 
 Session 1 includes the complete analysis of system response time and retransmission behavior using virtual modem packet logs.
 The data were processed to produce three plots:
@@ -47,3 +47,4 @@ The raw CSV logs stored in data/ include:
 * Packets received with errors and retransmissions
 
 These files were used to calculate delays, identify ACK/NACK sequences, and generate the three plots.
+
