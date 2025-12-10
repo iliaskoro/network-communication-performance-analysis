@@ -5,13 +5,13 @@ This session focuses on response-time behavior, ARQ retransmissions, and error-r
 
 Included analyses:
 
-* Echo response time under normal conditions
+- Echo response time under normal conditions
 
-* Echo response time under ARQ with induced random bit errors
+- Echo response time under ARQ with induced random bit errors
 
-* Probability distribution of retransmissions for erroneous packets
+- Probability distribution of retransmissions for erroneous packets
 
-* Supporting CSV datasets used to generate the plots
+- Supporting CSV datasets used to generate the plots
 
 <h2>Contents</h2>
 
@@ -37,11 +37,11 @@ session2/
 Echo response time for each received packet over a 4-minute window.
 Key metrics extracted from dataset:
 
-* Minimum RTT: 22 ms
+- Minimum RTT: 22 ms
 
-* Maximum RTT: 358 ms
+- Maximum RTT: 358 ms
 
-* Mean RTT: 38.5 ms
+- Mean RTT: 38.5 ms
 
 <h3>G2 – Response Time with ARQ (Error-Induced Channel)</h3>
 
@@ -53,21 +53,21 @@ The time distribution reflects retransmission overhead and jitter due to resends
 Histogram showing the number of retransmissions required for erroneous packets.
 Dataset summary:
 
-* Total packets: 6230
+- Total packets: 6230
 
-* NACK: 938
+- NACK: 938
 
-* ACK: 5292
+- ACK: 5292
 
-* Error probability:
+- Error probability:
 
 $$ q = \frac{938}{6230} \approx 0.15 $$
 
-* Success probability:
+- Success probability:
 
 $$ p = 1 - q = 0.85 $$
 
-* BER estimation using
+- BER estimation using
 
 $$
 BER = 1 - \left( \frac{ack}{ack + nack} \right)^{1/128}
@@ -79,14 +79,15 @@ Result: BER ≈ 0.0013
 
 This session evaluates:
 
-* System reliability under erroneous channel conditions
+- System reliability under erroneous channel conditions
 
-* ARQ effectiveness
+- ARQ effectiveness
 
-* Impact of retransmissions on latency
+- Impact of retransmissions on latency
 
-* Statistical behavior of packet errors
+- Statistical behavior of packet errors
 
 
 All plots were produced directly from the included CSV datasets.
+
 
