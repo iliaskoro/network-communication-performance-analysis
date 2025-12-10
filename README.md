@@ -4,15 +4,15 @@ A complete Java implementation for the "ITHAKI Virtual Modem" project (AUTH ECE 
 
 This repository contains a modular Java implementation for analyzing modem-based communication using the Ithaki Virtual Modem. The project performs:
 
-*Echo packet RTT measurements
+* Echo packet RTT measurements
 
-*ARQ-based packet transmission with FCS validation
+* ARQ-based packet transmission with FCS validation
 
-*JPEG image retrieval (error-free and error-induced)
+* JPEG image retrieval (error-free and error-induced)
 
-*GPS coordinate extraction and map image reconstruction
+* GPS coordinate extraction and map image reconstruction
 
-*CSV logging and structured packet export
+* CSV logging and structured packet export
 
 Two experiment sessions (“session1” and “session2”) are included. Each session contains:
 
@@ -93,4 +93,5 @@ java userApplication.Main
 All output files are generated under the directory defined in FILES_PATH inside Main.java.
 
 If you wish to separate results per session (e.g., session1, session2), adjust FILES_PATH accordingly before execution.
+
 
