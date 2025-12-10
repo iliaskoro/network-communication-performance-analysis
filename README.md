@@ -1,4 +1,4 @@
-Modem Communication & Network Performance Analysis (Java)
+<h1>Modem Communication & Network Performance Analysis (Java)</h1>
 
 A complete Java implementation for the "ITHAKI Virtual Modem" project (AUTH ECE – Computer Networks). Includes RTT measurements, ARQ retransmission analysis, GPS parsing, JPEG retrieval, and structured session outputs.
 
@@ -26,7 +26,8 @@ Two experiment sessions (“session1” and “session2”) are included. Each s
 
 The project is structured so that each session is fully reproducible and self-contained.
 
-Project Structure
+<h2>Project Structure</h2>
+
 ```
 /
 ├── src/
@@ -75,7 +76,7 @@ Each session directory contains:
 
 The project separates code (```src/```) from experimental results (```data_output/```), ensuring clarity and reproducibility.
 
-Requirements
+<h2>Requirements</h2>
 
 Java
 
@@ -89,7 +90,7 @@ Modem
 
 * Reliable serial/terminal configuration
 
-Running the Project
+<h2>Running the Project</h2>
 
 Compile:
 ```
@@ -102,6 +103,7 @@ java userApplication.Main
 All output files are generated under the directory defined in FILES_PATH inside Main.java.
 
 If you wish to separate results per session (e.g., session1, session2), adjust ```FILES_PATH``` accordingly before execution.
+
 
 
 
