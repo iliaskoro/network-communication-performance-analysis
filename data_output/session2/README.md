@@ -5,13 +5,13 @@ This session focuses on response-time behavior, ARQ retransmissions, and error-r
 
 Included analyses:
 
-Echo response time under normal conditions
+* Echo response time under normal conditions
 
-Echo response time under ARQ with induced random bit errors
+* Echo response time under ARQ with induced random bit errors
 
-Probability distribution of retransmissions for erroneous packets
+* Probability distribution of retransmissions for erroneous packets
 
-Supporting CSV datasets used to generate the plots
+* Supporting CSV datasets used to generate the plots
 
 Contents
 ```
@@ -21,11 +21,11 @@ session2/
 │   ├── virtualModempackets_without_errors.csv
 │
 ├── plots/
-│   ├── g1.png       # Response time (normal packets)
-│   ├── g2.png       # Response time (ARQ with induced errors)
-│   ├── g3.png       # Retransmission probability distribution
+│   ├── g1.png
+│   ├── g2.png
+│   ├── g3.png
 │
-├── audio/          # (empty or unused in this session)
+├── audio/
 │
 └── README.md
 ```
@@ -35,11 +35,11 @@ G1 – Response Time (Normal Packets)
 Echo response time for each received packet over a 4-minute window.
 Key metrics extracted from dataset:
 
-Minimum RTT: 22 ms
+* Minimum RTT: 22 ms
 
-Maximum RTT: 358 ms
+* Maximum RTT: 358 ms
 
-Mean RTT: 38.5 ms
+* Mean RTT: 38.5 ms
 
 G2 – Response Time with ARQ (Error-Induced Channel)
 
@@ -51,13 +51,13 @@ G3 – Retransmission Probability Distribution
 Histogram showing the number of retransmissions required for erroneous packets.
 Dataset summary:
 
-Total packets: 6230
+* Total packets: 6230
 
-NACK: 938
+* NACK: 938
 
-ACK: 5292
+* ACK: 5292
 
-Error probability:
+* Error probability:
 
 𝑞
 =
@@ -68,7 +68,7 @@ Error probability:
 0.15
 q=938/6230≈0.15
 
-Success probability:
+* Success probability:
 
 𝑝
 =
@@ -79,7 +79,7 @@ Success probability:
 0.85
 p=1−q=0.85
 
-BER estimation using
+* BER estimation using
 
 𝐵
 𝐸
@@ -117,12 +117,13 @@ Purpose of Session 2
 
 This session evaluates:
 
-System reliability under erroneous channel conditions
+* System reliability under erroneous channel conditions
 
-ARQ effectiveness
+* ARQ effectiveness
 
-Impact of retransmissions on latency
+* Impact of retransmissions on latency
 
-Statistical behavior of packet errors
+* Statistical behavior of packet errors
+
 
 All plots were produced directly from the included CSV datasets.
