@@ -53,6 +53,8 @@ The project is structured so that each session is fully reproducible and self-co
 │
 └── README.md
 ```
+<h2>Java Modules (Short Overview)</h2>
+
 | File                  | Purpose                                                    |
 | --------------------- | ---------------------------------------------------------- |
 | **Main.java**         | Runs the full experiment: echo, GPS, ARQ, images, logging. |
@@ -78,13 +80,13 @@ The project separates code (```src/```) from experimental results (```data_outpu
 
 <h2>Requirements</h2>
 
-Java
+<h3>Java</h3>
 
 * JDK 8 or newer
 
 * Standard Java I/O (no additional libraries required)
 
-Modem
+<h3>Modem</h3>
 
 * Ithaki Virtual Modem environment
 
@@ -92,17 +94,20 @@ Modem
 
 <h2>Running the Project</h2>
 
-Compile:
+<h3>Compile:</h3>
+
 ```
 javac src/userApplication/*.java
 ```
-Execute:
+<h3>Execute:</h3>
+
 ```
 java userApplication.Main
 ```
 All output files are generated under the directory defined in FILES_PATH inside Main.java.
 
 If you wish to separate results per session (e.g., session1, session2), adjust ```FILES_PATH``` accordingly before execution.
+
 
 
 
