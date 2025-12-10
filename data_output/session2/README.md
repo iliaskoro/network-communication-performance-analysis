@@ -1,4 +1,4 @@
-Session 2 – ARQ Response Time & Error Analysis
+<h1>Session 2 – ARQ Response Time & Error Analysis</h1>
 
 Session 2 contains the second full measurement set for the virtual modem system.
 This session focuses on response-time behavior, ARQ retransmissions, and error-rate estimation, using both clean and error-induced packet streams.
@@ -13,7 +13,8 @@ Included analyses:
 
 * Supporting CSV datasets used to generate the plots
 
-Contents
+<h2>Contents</h2>
+
 ```
 session2/
 ├── data/
@@ -29,8 +30,9 @@ session2/
 │
 └── README.md
 ```
-Plots Overview
-G1 – Response Time (Normal Packets)
+
+<h2>Plots Overview</h2>
+<h3>G1 – Response Time (Normal Packets)</h3>
 
 Echo response time for each received packet over a 4-minute window.
 Key metrics extracted from dataset:
@@ -41,12 +43,12 @@ Key metrics extracted from dataset:
 
 * Mean RTT: 38.5 ms
 
-G2 – Response Time with ARQ (Error-Induced Channel)
+<h3>G2 – Response Time with ARQ (Error-Induced Channel)</h3>
 
 Response time for packets successfully received under ARQ, using artificially introduced transmission errors.
 The time distribution reflects retransmission overhead and jitter due to resends.
 
-G3 – Retransmission Probability Distribution
+<h3>G3 – Retransmission Probability Distribution</h3>
 
 Histogram showing the number of retransmissions required for erroneous packets.
 Dataset summary:
@@ -59,61 +61,21 @@ Dataset summary:
 
 * Error probability:
 
-𝑞
-=
-938
-/
-6230
-≈
-0.15
-q=938/6230≈0.15
+$$ q = \frac{938}{6230} \approx 0.15 $$
 
 * Success probability:
 
-𝑝
-=
-1
-−
-𝑞
-=
-0.85
-p=1−q=0.85
+$$ p = 1 - q = 0.85 $$
 
 * BER estimation using
 
-𝐵
-𝐸
-𝑅
-=
-1
-−
-(
-𝑎
-𝑐
-𝑘
-𝑎
-𝑐
-𝑘
-+
-𝑛
-𝑎
-𝑐
-𝑘
-)
-1
-/
-128
-BER=1−(
-ack+nack
-ack
-	​
-
-)
-1/128
+$$
+BER = 1 - \left( \frac{ack}{ack + nack} \right)^{1/128}
+$$
 
 Result: BER ≈ 0.0013
 
-Purpose of Session 2
+<h2>Purpose of Session 2</h2>
 
 This session evaluates:
 
@@ -127,3 +89,4 @@ This session evaluates:
 
 
 All plots were produced directly from the included CSV datasets.
+
