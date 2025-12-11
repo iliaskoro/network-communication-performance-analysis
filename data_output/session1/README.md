@@ -15,12 +15,12 @@ The data were processed to produce three plots:
 session1/
 ├── data/
 │   ├── virtualModempackets_with_errors.csv
-│   ├── virtualModempackets_without_errors.csv
+│   └──  virtualModempackets_without_errors.csv
 │
 ├── plots/
 │   ├── g1.png
 │   ├── g2.png
-│   ├── g3.png
+│   └── g3.png
 │
 └── README.md
 ```
@@ -47,5 +47,6 @@ The raw CSV logs stored in data/ include:
 - Packets received with errors and retransmissions
 
 These files were used to calculate delays, identify ACK/NACK sequences, and generate the three plots.
+
 
 
