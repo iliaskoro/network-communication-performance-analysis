@@ -19,12 +19,12 @@ Included analyses:
 session2/
 ├── data/
 │   ├── virtualModempackets_with_errors.csv
-│   ├── virtualModempackets_without_errors.csv
+│   └── virtualModempackets_without_errors.csv
 │
 ├── plots/
 │   ├── g1.png
 │   ├── g2.png
-│   ├── g3.png
+│   └── g3.png
 │
 ├── audio/
 │
@@ -89,5 +89,6 @@ This session evaluates:
 
 
 All plots were produced directly from the included CSV datasets.
+
 
 
